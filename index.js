@@ -43,11 +43,11 @@ app.get('/add-note', async (req,res) => {
         body: "Body text goes here...",
       },
       {
-        title: "Games of Thrones",
+        title: "Game of Thrones",
         body: "Body text goes here...",
       }
     ]);
-    res.json({"Data":"Added"})
+    res.send({"Data":"Added"})
   } catch (error) {
     console.log("err", + error);
   }
